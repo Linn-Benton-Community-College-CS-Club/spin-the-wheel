@@ -1,0 +1,419 @@
+/* default margin and padding settings */
+
+/* rainbow style source:
+https://codepen.io/srmanu/pen/OVXXmj?html-preprocessor=pug */
+
+/* wheel and rotation: 
+https://www.youtube.com/watch?v=2plnsl8P2zE */
+
+/* set the position of the prize key container */
+.key-container {
+  position: relative;
+  left: 420px;
+  top: 100px;
+
+}
+/* set the wheel container to flex so we can fit the prize key container and the wheel and arrow container next to each other */
+.wheel-container {
+  display: flex;
+}
+/* sets the position of the wheel and prize key */
+.flex {
+  flex: 1;
+}
+.flex:first-child{
+  margin-right: 40px;
+}
+
+/* first container */
+#root{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+/* styling of each section of the wheel. Colors alternate between blue, white, and yellow */
+li:first-child .text {
+
+  background-color: blue;
+  
+}
+
+li:nth-child(2) .text{
+  background-color: white;
+
+}
+
+li:nth-child(3){
+  background-color: yellow;
+
+}
+
+li:nth-child(4) {
+  background-color: white;
+}
+
+li:nth-child(5) {
+  background-color: yellow;
+}
+
+li:nth-child(6) {
+  background-color: white;
+}
+
+li:nth-child(7) {
+  background-color: blue;
+ 
+}
+
+li:nth-child(8) {
+  background-color: white;
+}
+
+li:nth-child(9) {
+  background-color: yellow;
+}
+
+li:nth-child(10) {
+  background-color: white;
+}
+
+li:nth-child(11) {
+  background-color: yellow;
+}
+
+li:nth-child(12) {
+  background-color: white;
+}
+
+/*rotate the lists by 30 degrees and skewing -60degreees in the verticle direction */
+li:first-child {
+  transform: rotate(0deg) skewY(-60deg);
+}
+
+li:nth-child(2) {
+  transform: rotate(30deg) skewY(-60deg);
+}
+
+li:nth-child(3) {
+  transform: rotate(60deg) skewY(-60deg)
+}
+
+li:nth-child(4) {
+  transform: rotate(90deg) skewY(-60deg)
+}
+
+li:nth-child(5) {
+  transform: rotate(120deg) skewY(-60deg)
+}
+
+li:nth-child(6) {
+  transform: rotate(150deg) skewY(-60deg)
+}
+
+li:nth-child(7) {
+  transform: rotate(180deg) skewY(-60deg);
+}
+
+li:nth-child(8) {
+  transform: rotate(210deg) skewY(-60deg);
+}
+
+li:nth-child(9) {
+  transform: rotate(240deg) skewY(-60deg);
+}
+
+li:nth-child(10) {
+  transform: rotate(270deg) skewY(-60deg)
+}
+
+li:nth-child(11) {
+  transform: rotate(300deg) skewY(-60deg)
+}
+
+li:nth-child(12) {
+  transform: rotate(330deg) skewY(-60deg);
+}
+/* styling for wheel */
+.wheel {
+  /*make width and height relative to the parent element font-size*/
+  width: 30em; 
+  height: 30em;
+  border: 1px solid black;
+  position: relative;
+  padding: 0;
+  margin: 1em auto;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  right: 750px;
+  top: 15%;
+
+
+}
+/* styling for wheel sections */
+li {
+
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+
+}
+/* styling for wheel text */
+.text {
+
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  display: block;
+  transform: skewY(60deg) rotate(15deg);  
+  padding-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+/* styling for arrow */
+.arrow {
+  position: absolute;
+  left: 36%;
+  top: 53%;
+  z-index: 1;
+  /* Font options */
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 4px #000000;
+  font-size:40px;
+  
+  /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+/* styling for rocky */
+.rocky {
+  position: absolute;
+  left: 17%; 
+  top: 50%;
+  width: 120px;
+  z-index: 1;
+}
+/* styling for title */
+.title{
+  position: relative;
+  left: 1%;
+  bottom: 10%;
+  font-family: "Comic Sans MS";
+  color: white;
+}
+/* styling for prize key */
+.key{
+  position: relative;
+  left: 92%;
+  color: white;
+  font-size: 30px;
+  bottom: 70px;
+  z-index: 10;
+}
+/* styling for the dash */
+.dash {
+  position: relative;
+  left: 72.4%;
+  align-items: center;
+  font-size: 30px;
+  bottom: 120px;
+  color: white;
+}
+/* styling for the blue square */
+.blue-square {
+  position: relative;
+  left: 72.4%;
+  align-items: center;
+  font-size: 30px;
+  bottom: 110px;
+  z-index: 10;
+  display: inline-block;  
+}
+/* styling for blue square text */
+.blue-square-text {
+  position: relative;
+  left: 79%;
+  font-size: 30px;
+  bottom: 205px;
+  color: white;
+  z-index: 10;
+
+}
+/* styling for yellow square  */
+.yellow-square {
+  position: relative;
+  left: 72.4%;
+  font-size: 30px;
+  bottom: 180px;
+  color: yellow;
+  z-index: 10;
+}
+/* styling for yellow square text */
+.yellow-square-text {
+  position: relative;
+  left: 79%;
+  align-items: center;
+  font-size: 30px;
+  bottom: 250px;
+  color: white;
+  z-index: 10;
+}
+
+.white-square {
+  position: relative;
+  left: 72.4%;
+  font-size: 30px;
+  bottom: 220px;
+  color: aliceblue;
+  z-index: 10;
+}
+
+.white-square-text {
+  position: relative;
+  left: 79%;
+  align-items: center;
+  font-size: 30px;
+  bottom: 290px;
+  color:white;
+  z-index: 10;
+}
+  
+/* begin rotation using the animation property  */
+.begin-rotation {
+  animation: begin-rotation 1s linear infinite;
+
+}
+/* transform the wheel by using the rotate function and making the wheel sping 360 degrees */
+@keyframes begin-rotation {
+  100% {
+    transform: rotate(360deg);
+  } 
+
+}
+/* stop rotation by pausing the animation */
+.stop-rotation {
+  animation-play-state: paused;
+}
+
+/* for possibile button if event is slow */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+   0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+ @keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+.glow-on-hover {
+  width: 280px;
+  height: 60px;
+  border: solid white;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  bottom: 40%;
+  font-family: "Comic Sans MS";
+  font-size: large;
+  display: inline-block;
+  left: 80%;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+} 
