@@ -55,11 +55,11 @@ function Home() {
 
                     {/* set the key for the yellow prizes */}
                     <p className="yellow-square"><BsFillSquareFill/>    </p>
-                    <p className="yellow-square-text"> 3-D Printed Slug</p>
+                    <p className="yellow-square-text"> 3-D Printed Slug or 3 Sticker</p>
 
                     {/* set the key for the white prizes */}
                     <p className="white-square"><BsFillSquareFill/> </p>
-                    <p className="white-square-text"> 3 Stickers</p>
+                    <p className="white-square-text"> 3-D Printed Slug or 3 Stickers</p>
                     {/* <button className="glow-on-hover" onClick={signUp}>Click to sign up for the CS Club!</button>                 */}
                 </div>
                 {/* wheel and arrow container */}
@@ -73,74 +73,75 @@ function Home() {
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Levi</div>
                         </li>
 
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Aliza</div>
                         </li>
 
                         <li>
                             <div className="text"
                            contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Gregory</div>
                         </li>
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Becca</div>
                         </li>
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Levi</div>
                         </li>
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Aliza</div>
                         </li>
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Gregory</div>
                         </li>
                         
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Becca</div>
                         </li>
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Levi</div>
                         </li>
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Aliza</div>
                         </li>
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Gregory</div>
                         </li>
 
                         <li>
                             <div className="text"
                             contentEditable = "false"
-                            spellCheck='false'> |</div>
+                            spellCheck='false'> Becca
+                            </div>
                         </li>
 
                     </ul>
